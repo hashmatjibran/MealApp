@@ -1,0 +1,190 @@
+/* general css rules */
+:root{
+    --textColor:rgba(17, 17, 17, 0.886);
+    --font-family:monospace;
+    --white-color:whitesmoke;
+}
+/* body css */
+body{
+    height: 100%;
+    overflow:hidden;
+}
+
+/* nav bar css */
+
+#nav{
+    margin-top: 0.5%;
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+    color: var(--textColor);
+    font-family: var(--font-family);
+    border-radius: 10px;
+}
+
+/* css for logo div in navigation bar */
+#nav #logo-div {
+    height: 4rem;
+    width: 5rem;
+}
+
+
+/* css for logo in navigation bar */
+#nav div #logo {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-image: url(./Images/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* css for anchor tag on logo */
+#nav div #logo a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+/* btn-div i.e hots and favorites display css */
+#btn-div{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+/* css for hots btn & css for favorite btn */
+ #hots ,  #favorites{
+    outline: none;
+    border: none;
+    background-color: inherit;
+    border-radius: 30px;
+    color: red;
+    cursor: pointer;
+}
+
+#hots:hover ,  #favorites:hover{
+    transform: scale(1.2);
+}
+
+
+/* css for #btn-div #favorites */
+#favorites {
+    color: var(--textColor);
+}
+
+#favorites >span , #hots >span {
+    border-bottom: 1px solid whitesmoke;
+}
+
+/* css for the whole box of search bar and search results */
+#box{
+    width: 20%;
+    left:35%;
+    position: relative;
+}
+/* css for displaying search results */
+
+#searchingItems {
+	position: absolute;
+	
+	width: 100%;
+	z-index: 2;
+	
+    
+}
+
+
+/* search bar / search item in navigation bar */
+.search-bar{
+    
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 5vh;
+        border: 1px solid grey;
+        border-radius: 30px;
+}
+
+/* outline ,background and otehr properties for btns and input element in navigation bar */
+.search-bar > *,.notification-btn{
+    outline: none;
+    border: none;
+    background-color: inherit;
+}
+
+/* css for input div in search bar to take white color*/
+
+.search-bar>input{
+    width: 80%;
+    color: var(--white-color);
+    
+}
+
+
+/* buttons in navigation bar */
+
+.search-bar>button,.notification-btn{
+    cursor: pointer;
+    color: var(--textColor);
+}
+
+/* main content css */
+.content{
+    height: 90%;
+    width: 100%;    
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* css for card items */
+.content .item{
+margin-left: 1%;
+margin-top: 1%;
+}
+
+
+/* card image css */
+.cardImage{
+    width: -moz-available;
+    cursor: pointer;
+}
+
+.card-title{
+    text-align: center;
+    color: orange;
+}
+
+.orange{
+    color: orange;
+}
+
+
+.list-group-item{
+    cursor: pointer;
+}
+
+.heart-icon{
+    color:grey;
+}
+.heart-icon:hover{
+    color:red;
+   transform: scale(1.2);
+}
+.favorite{
+    color:red;
+}
+.favorite:hover{
+    color: grey;;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+}
