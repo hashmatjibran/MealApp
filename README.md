@@ -15,3 +15,4 @@ There are 3 files in this project :-
 2) index.js:- This file contains the whole java script functionality related to the app.
 3) style.css :- This file contains all the css styles related to the app.
 
+You can directly visit the site at :- https://hashmatjibran.github.io/MealApp/
